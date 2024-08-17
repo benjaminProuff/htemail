@@ -8,10 +8,12 @@ type Props = {
 const Layout: React.FC<Props> = (props) => (
   <div>
     <Header />
+
     <div className="layout">{props.children}</div>
     <style jsx global>{`
       html {
         box-sizing: border-box;
+        background-color: white;
       }
 
       *,
@@ -41,7 +43,7 @@ const Layout: React.FC<Props> = (props) => (
     `}</style>
     <style jsx>{`
       .layout {
-        padding: 0 2rem;
+        background-color: white;
       }
     `}</style>
   </div>
